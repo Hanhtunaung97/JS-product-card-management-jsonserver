@@ -4,27 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cart-management</title>
-    <link rel="icon" href="./public/img/shopping cart.jpg">
+    <link rel="icon" href="./public/img/shopping cart.jpg" />
     <!-- Primary Meta Tags -->
-<title>MMSIT-SWD Product-card management</title>
-<meta name="title" content="MMSIT-SWD Product-card management" />
-<meta name="description" content="SWD sample product card management system with javascript vite " />
+    <title>MMSIT-SWD Product-card management</title>
+    <meta name="title" content="MMSIT-SWD Product-card management" />
+    <meta
+      name="description"
+      content="SWD sample product card management system with javascript vite "
+    />
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://mms-it.com" />
-<meta property="og:title" content="MMSIT-SWD Product-card management" />
-<meta property="og:description" content="SWD sample product card management system with javascript vite " />
-<meta property="og:image" content="https://cdn.pixabay.com/photo/2017/08/06/22/52/jeans-2597210_1280.jpg" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mms-it.com" />
+    <meta property="og:title" content="MMSIT-SWD Product-card management" />
+    <meta
+      property="og:description"
+      content="SWD sample product card management system with javascript vite "
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.pixabay.com/photo/2017/08/06/22/52/jeans-2597210_1280.jpg"
+    />
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://mms-it.com" />
-<meta property="twitter:title" content="MMSIT-SWD Product-card management" />
-<meta property="twitter:description" content="SWD sample product card management system with javascript vite " />
-<meta property="twitter:image" content="https://cdn.pixabay.com/photo/2017/08/06/22/52/jeans-2597210_1280.jpg" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://mms-it.com" />
+    <meta
+      property="twitter:title"
+      content="MMSIT-SWD Product-card management"
+    />
+    <meta
+      property="twitter:description"
+      content="SWD sample product card management system with javascript vite "
+    />
+    <meta
+      property="twitter:image"
+      content="https://cdn.pixabay.com/photo/2017/08/06/22/52/jeans-2597210_1280.jpg"
+    />
 
-<!-- Meta Tags Generated with https://metatags.io -->
+    <!-- Meta Tags Generated with https://metatags.io -->
   </head>
   <body>
     <main id="app">
@@ -35,8 +53,13 @@
           <h1 class="text-3xl font-bold text-indigo-700">MMS Solution</h1>
           <p class="text-indigo-400">E-commerce</p>
         </div>
-        <div class="flex justify-center items-center gap-2" >
-          <input type="text" id="searchInput" placeholder="Product search" class="animate__animated opacity-0 focus:opacity-100 pointer-events-none focus:pointer-events-auto p-3  focus:outline-none focus:ring-2 focus:ring-indigo-700 fixed sm:static left-0 right-0 mx-auto top-20 w-2/4">
+        <div class="flex justify-center items-center gap-2">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Product search"
+            class="animate__animated opacity-0 focus:opacity-100 pointer-events-none focus:pointer-events-auto p-3 focus:outline-none focus:ring-2 focus:ring-indigo-700 fixed sm:static left-0 right-0 mx-auto top-20 w-2/4"
+          />
           <button id="searchBtn" class="border border-indigo-800 p-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +94,11 @@
                 d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
               />
             </svg>
-            <span id="cartCountBadge" class="absolute bg-green-900 text-white text-xs border-2 border-white px-1 w-6 h-6 inline-flex justify-center items-center rounded-full top-0 right-0 translate-x-1/2 -translate-y-1/2">0</span>
+            <span
+              id="cartCountBadge"
+              class="absolute bg-green-900 text-white text-xs border-2 border-white px-1 w-6 h-6 inline-flex justify-center items-center rounded-full top-0 right-0 translate-x-1/2 -translate-y-1/2"
+              >0</span
+            >
           </button>
         </div>
       </header>
@@ -81,13 +108,30 @@
           <h3 class="font-semibold text-indigo-700 font-heading mb-3">
             Product Categories
           </h3>
-          <div id="categoryLists" class="flex gap-2 justify-stretch max-w-full  overflow-y-hidden overflow-x-scroll md:overflow-hidden">
+          <div
+            id="categoryLists"
+            class="flex gap-3 justify-stretch max-w-full overflow-y-hidden overflow-x-scroll md:overflow-hidden"
+          >
             <button class="category-badge active">All</button>
+            <div class="hidden last:flex gap-2 animate-pulse">
+              <button class="category-badge">
+                <div class="h-4 w-24 bg-sky-100 rounded-lg"></div>
+              </button>
+              <button class="category-badge">
+                <div class="h-4 w-24 bg-sky-100 rounded-lg"></div>
+              </button>
+              <button class="category-badge">
+                <div class="h-4 w-24 bg-sky-100 rounded-lg"></div>
+              </button>
+              <button class="category-badge">
+                <div class="h-4 w-24 bg-sky-100 rounded-lg"></div>
+              </button>
+            </div>
           </div>
         </section>
         <section
           id="cartUi"
-          class="bg-white translate-x-full  w-[380px] h-screen z-50 fixed right-0 top-0 border-s-2 border-indigo-700"
+          class="bg-white translate-x-full w-[380px] h-screen z-50 fixed right-0 top-0 border-s-2 border-indigo-700"
         >
           <div class="h-full flex flex-col">
             <div
@@ -97,9 +141,16 @@
                 <h1 class="text-3xl font-bold text-indigo-700">
                   Shopping Cart
                 </h1>
-                <p class="text-indigo-400">Your Items Count <span id="cartCount" class="bg-green-900 text-white inline-flex justify-center items-center text-xs px-2 py-1 rounded-full border-2 border-white">10</span></p>
+                <p class="text-indigo-400">
+                  Your Items Count
+                  <span
+                    id="cartCount"
+                    class="bg-green-900 text-white inline-flex justify-center items-center text-xs px-2 py-1 rounded-full border-2 border-white"
+                    >10</span
+                  >
+                </p>
               </div>
-              <button id="closeBtn" class=" border border-indigo-800 p-3">
+              <button id="closeBtn" class="border border-indigo-800 p-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -116,24 +167,33 @@
                 </svg>
               </button>
             </div>
-            <div id="cartItems" class="cart-items flex-grow p-3 h-auto overflow-y-scroll overflow-x-hidden">
+            <div
+              id="cartItems"
+              class="cart-items flex-grow p-3 h-auto overflow-y-scroll overflow-x-hidden"
+            >
               <div
                 class="hidden last:flex flex-col justify-center items-center h-full"
               >
                 <img src="./public/img/empty-cart.svg" class="w-3/4" alt="" />
                 <p class="pt-5">There is no item yet!</p>
               </div>
-             
             </div>
 
             <div
               class="cart-footer p-3 border-t-2 border-indigo-700 flex flex-col"
             >
               <div class="text-end mb-3">
-                <h5 class="font-heading text-indigo-700 font-bold">Total Amount</h5>
-                <p class="text-3xl text-indigo-600">$ <span id="cartTotalAmount">0</span></p>
+                <h5 class="font-heading text-indigo-700 font-bold">
+                  Total Amount
+                </h5>
+                <p class="text-3xl text-indigo-600">
+                  $ <span id="cartTotalAmount">0</span>
+                </p>
               </div>
-              <button id="orderNowBtn" class="p-2 bg-indigo-700 text-white w-full block">
+              <button
+                id="orderNowBtn"
+                class="p-2 bg-indigo-700 text-white w-full block"
+              >
                 Order Now
               </button>
             </div>
@@ -142,7 +202,17 @@
         <section
           class="mb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
           id="productSection"
-        ></section>
+        >
+      <div class="animate-pulse">
+        <div class="h-56 w-full rounded bg-sky-50"></div>
+      </div>
+      <div class="animate-pulse">
+        <div class="h-56 w-full rounded bg-sky-50"></div>
+      </div>
+      <div class="animate-pulse">
+        <div class="h-56 w-full rounded bg-sky-50"></div>
+      </div>
+      </section>
 
         <footer
           class="bg-indigo-700 p-3 text-white flex justify-between align-middle"
@@ -151,7 +221,11 @@
             CopyRight &copy; 2023 |
             <a href="https://mms-it.com" class="underline">MMSIT</a>
           </p>
-          <a href="#headerSpacer" id="scrollToTop" class="border border-white p-2">
+          <a
+            href="#headerSpacer"
+            id="scrollToTop"
+            class="border border-white p-2"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -166,7 +240,7 @@
                 d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75"
               />
             </svg>
-          </a >
+          </a>
         </footer>
       </div>
     </main>

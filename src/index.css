@@ -15,10 +15,10 @@
   @apply bg-red-500 text-white !important;
 }
 .category-badge {
-  @apply capitalize block w-full  border-b border-indigo-700 py-1 px-2 duration-75 text-indigo-700 whitespace-nowrap;
+  @apply capitalize block  border-b border-indigo-700 py-1 px-2 duration-75 text-indigo-700 whitespace-nowrap;
 }
 .category-badge.active {
-  @apply border  bg-indigo-700 py-1 px-2 text-white ;
+  @apply border  bg-indigo-700 py-1 px-2 text-white;
 }
 .product-card {
 }
